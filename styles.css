@@ -52,7 +52,7 @@ p.thick {
 /* ABOUT SECTION */
 /****************************************************/
 
-#about{margin:0px 43px; padding-top:70px;}
+#about{margin:0px 43px; padding-top:90px;}
 #about h1{float:left;}
 #about #top-social{float:right; padding-top:62px;}
 #about #top-social li{float:left; list-style:none; margin-left:10px;}
@@ -105,7 +105,7 @@ p.thick {
 /* EXPERIENCE SECTION */
 /****************************************************/
 
-#experience{margin:0px 43px; padding-top:85px;}
+#experience{margin:0px 43px; padding-top:90px;}
 #experience .col{
 	width:235px;
 	float:left;
@@ -127,7 +127,7 @@ p.thick {
 /****************************************************/
 /* CONNECT SECTION */
 /****************************************************/
-#connect{margin:0px 43px; padding-top:115px;}
+#connect{margin:0px 43px; padding-top:135px;}
 #connect .content{overflow:auto;}
 #connect #form{
 	width:410px;
