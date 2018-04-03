@@ -52,7 +52,7 @@ p.thick {
 /* ABOUT SECTION */
 /****************************************************/
 
-#about{margin:0px 43px; padding-top:127px;}
+#about{margin:0px 43px; padding-top:124px;}
 #about h1{float:left;}
 #about #top-social{float:right; padding-top:62px;}
 #about #top-social li{float:left; list-style:none; margin-left:10px;}
@@ -116,7 +116,7 @@ p.thick {
 /****************************************************/
 /* TEACHING SECTION */
 /****************************************************/
-#teaching{margin:0px 43px; padding-top:150px;}
+#teaching{margin:0px 43px; padding-top:130px;}
 #teaching .col{
 	width:235px;
 	float:left;
@@ -127,7 +127,7 @@ p.thick {
 /****************************************************/
 /* CONNECT SECTION */
 /****************************************************/
-#connect{margin:0px 43px; padding-top:135px;}
+#connect{margin:0px 43px; padding-top:125px;}
 #connect .content{overflow:auto;}
 #connect #form{
 	width:410px;
