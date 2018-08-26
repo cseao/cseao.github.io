@@ -105,13 +105,13 @@ p.thick {
 /* EXPERIENCE SECTION */
 /****************************************************/
 
-#research{margin:0px 43px; padding-top:90px;}
+#research{margin:0px 43px; padding-top:70px;}
 #research .col{
 	width:235px;
 	float:left;
 }
 #research .content{overflow:auto;}
-#research .col-mid{margin:0px 65px;}
+#research .col-mid{margin:0px 45px;}
 
 /****************************************************/
 /* TEACHING SECTION */
