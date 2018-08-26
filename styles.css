@@ -105,7 +105,7 @@ p.thick {
 /* EXPERIENCE SECTION */
 /****************************************************/
 
-#experience{margin:0px 43px; padding-top:110px;}
+#experience{margin:10px 43px; padding-top:110px;}
 #experience .col{
 	width:235px;
 	float:left;
@@ -116,7 +116,7 @@ p.thick {
 /****************************************************/
 /* TEACHING SECTION */
 /****************************************************/
-#teaching{margin:0px 43px; padding-top:120px;}
+#teaching{margin:0px 43px; padding-top:110px;}
 #teaching .col{
 	width:235px;
 	float:left;
