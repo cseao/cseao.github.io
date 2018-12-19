@@ -73,10 +73,11 @@ p.thick {
 #about #top-social .linkedin{
 	text-indent:-9999px;
 	display:block;
-	width:26px;
-	height:26px;
+	width:30px;
+	height:30px;
 	background:url(images/sm-linkedin-icon.png) no-repeat;
 }
+
 #about #top-social .scholar{
 	text-indent:-9999px;
 	display:block;
