@@ -2,7 +2,6 @@
 @import url("font-awesome.min.css");
 
 
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -92,12 +91,11 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
-
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
 		color: #888;
-		font-weight: 500;
+		font-weight: 350;
 		font-size: 13pt;
 	}
 
