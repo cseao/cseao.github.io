@@ -94,7 +94,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		color: #888;
+		color: #666;
 		font-weight: 350;
 		font-size: 13pt;
 	}
@@ -118,7 +118,7 @@ input, select, textarea {
 
 	b, strong {
 		font-weight: 600;
-		color: #3e3e3e;
+		color: #3a3a3a;
 	}
 
 	i, em {
@@ -2036,7 +2036,7 @@ input, select, textarea {
 
 		#nav li {
 			display: inline-block;
-			padding-left: 0;
+			
 		}
 
 		#nav a {
@@ -2425,3 +2425,152 @@ input, select, textarea {
 					}
 
 	}
+/* =========================================================
+   Content structure & readability fixes (non-breaking)
+   Paste at END of main.css
+   ========================================================= */
+
+/* 1) Content rhythm: avoid relying on <br> for vertical spacing */
+#top p,
+#activities p,
+#research p,
+#teaching p {
+	margin: 0 0 1.0em 0;
+}
+
+/* 2) Headings: consistent spacing (keeps existing font sizes) */
+#activities h2, #research h2, #teaching h2 {
+	margin-top: 1.25em;
+	margin-bottom: 0.6em;
+}
+
+#activities h3, #research h3, #teaching h3 {
+	margin-top: 1.0em;
+	margin-bottom: 0.5em;
+}
+
+/* Prevent extra top margin when a section starts with a heading */
+#activities h2:first-child,
+#research h2:first-child,
+#teaching h2:first-child,
+#activities h3:first-child,
+#research h3:first-child,
+#teaching h3:first-child {
+	margin-top: 0;
+}
+
+/* 3) Lists: restore bullets/numbering ONLY in content, not in nav/social/actions */
+#top ul:not(.social):not(.actions),
+#activities ul:not(.social):not(.actions),
+#research ul:not(.social):not(.actions),
+#teaching ul:not(.social):not(.actions) {
+	list-style: disc;
+	padding-left: 1.1em;
+	margin: 0 0 1.0em 0;
+}
+
+#top ol,
+#activities ol,
+#research ol,
+#teaching ol {
+	list-style: decimal;
+	padding-left: 1.25em;
+	margin: 0 0 1.0em 0;
+}
+
+/* List item spacing for readability in long sections */
+#activities ul li,
+#research ul li,
+#teaching ul li,
+#activities ol li,
+#research ol li,
+#teaching ol li {
+	margin: 0.35em 0;
+	padding-left: 0.25em;
+}
+
+/* 4) Publications: add separation between entries without changing layout */
+#research ol li p {
+	margin: 0.25em 0 0.9em 0;
+}
+
+/* 5) Links: reduce visual noise in dense bibliographies */
+a {
+	text-underline-offset: 2px;
+	text-decoration-thickness: 1px;
+}
+
+/* 6) Optional contact list styling (if you move contact details into <ul class="contact">) */
+ul.contact {
+	list-style: none;
+	padding-left: 0;
+	margin: 0.75em 0 0 0;
+}
+
+ul.contact li {
+	margin: 0.25em 0;
+	padding-left: 0;
+}
+
+/* 7) Professional Activities: compact “by year” list (if you use it) */
+#activities ul.pc-by-year {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0.5em;
+}
+
+#activities ul.pc-by-year li {
+	margin: 0.25em 0;
+	padding-left: 0;
+}
+
+/* 8) Small screens: keep vertical rhythm tight */
+@media screen and (max-width: 736px) {
+	#top p, #activities p, #research p, #teaching p {
+		margin-bottom: 0.9em;
+	}
+
+	#activities h2, #research h2, #teaching h2 {
+		margin-top: 1.0em;
+	}
+
+	#activities h3, #research h3, #teaching h3 {
+		margin-top: 0.9em;
+	}
+}
+/* ---- Mobile nav: prevent wrapping ---- */
+@media screen and (max-width: 736px) {
+	#nav ul {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	#nav li {
+		flex: 0 0 auto;
+	}
+
+	#nav a {
+		white-space: nowrap;
+		padding: 0 0.75em;
+		font-size: 0.95em;
+	}
+}
+@media screen and (max-width: 736px) {
+	.wrapper {
+		padding: 3em 0;
+	}
+
+	#top {
+		padding: 3em 0;
+	}
+}
+
+/* Reduce excessive vertical whitespace */
+.wrapper {
+	padding: 5em 0;
+}
+#top {
+	padding: 5em 0;
+}
